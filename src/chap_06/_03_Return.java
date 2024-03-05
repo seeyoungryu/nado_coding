@@ -19,7 +19,11 @@ public class _03_Return {
 
     public static void main(String[] args) {
         // 반환값, Return
+
+
         String contactNumber = getPhoneNumber();
+        //*getPhoneNumber() 메소드를 호출하여 그 반환값을 contactNumber 변수에 할당하는 코드
+
         System.out.println("호텔 전화번호 : " + contactNumber);
 
         String address = getAddress();
