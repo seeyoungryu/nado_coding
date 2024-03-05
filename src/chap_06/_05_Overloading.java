@@ -7,10 +7,11 @@ public class _05_Overloading {
         // return number * number;
     }
 
-    public static int getPower(String strNumber) {
-        int number = Integer.parseInt(strNumber);
-        return number * number;
+    public static int getPower(String strNumber) {   //getPower메소드 정의, 반환값 Int, 파라미터값 String)
+        int number = Integer.parseInt(strNumber);    //number 변수에 strMumber를 int 값으로 파싱 (parsing)
+        return number * number;                      //제곱 값을 반환
     }
+
 
     public static int getPower(int number, int exponent) {
         int result = 1;
