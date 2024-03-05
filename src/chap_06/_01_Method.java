@@ -6,7 +6,7 @@ public class _01_Method {
         System.out.println("안녕하세요? 메소드입니다.");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {          //메인메소드 (실행)
         // 메소드 호출
         System.out.println("메소드 호출 전");
         sayHello();
