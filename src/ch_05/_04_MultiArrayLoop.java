@@ -31,6 +31,11 @@ public class _04_MultiArrayLoop {
             System.out.println();
         }
 
+
+        //2차원 배열에서 배열명.length는 배열의 행의 개수(세로 크기)를 반환하고, 배열명[i].length는 i번째 행의 열의 개수(가로 크기)를 반환합니다.
+        // 이 경우에는 모든 행이 동일한 길이인 15를 가지므로, seats3[i].length는 어떤 i에 대해서도 15의 값을 가집니다.
+
+
         System.out.println("---------------------");
         // 세로 크기 10 x 가로 크기 15 에 해당하는 영화관 좌석
         String[][] seats3 = new String[10][15];

@@ -17,8 +17,8 @@ public class _01_Array {
         // 배열 선언 첫 번째 방법
         // String[] coffees = new String[4];
 
-        // 두 번째 방법
-        // String coffees[] = new String[4];
+//         두 번째 방법
+//         String coffees[] = new String[4];
 //        coffees[0] = "아메리카노"; // 0 부터 시작
 //        coffees[1] = "카페모카";
 //        coffees[2] = "라떼";
