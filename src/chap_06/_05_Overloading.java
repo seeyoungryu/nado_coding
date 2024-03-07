@@ -1,5 +1,8 @@
 package chap_06;
 
+
+//메소드 오버로딩: 같은 이름의 메소드, 다른 전달값
+
 public class _05_Overloading {
     public static int getPower(int number) {
         int result = number * number;
