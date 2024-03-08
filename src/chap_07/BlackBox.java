@@ -1,14 +1,19 @@
 package chap_07;
 
+
+//public 접근제한자 -> 어느 패키지에서든 접근하고 객체를 생성할 수 있음
+//
+//
+
+
 public class BlackBox {
+    static int counter = 0; // 시리얼 번호를 생성해주는 역할 (처음엔 0이었다가 ++ 연산을 통해서 값을 증가)
+    static boolean canAutoReport = false; // 자동 신고 기능        *Static -> 클래스 변수
     String modelName; // 모델명
     String resolution; // 해상도
     int price; // 가격
     String color; // 색상
     int serialNumber; // 시리얼 번호
-
-    static int counter = 0; // 시리얼 번호를 생성해주는 역할 (처음엔 0이었다가 ++ 연산을 통해서 값을 증가)
-    static boolean canAutoReport = false; // 자동 신고 기능
 
     BlackBox() {
 //        System.out.println("기본 생성자 호출");
@@ -26,11 +31,14 @@ public class BlackBox {
 //        this.color = color;
     }
 
+    static void callServiceCenter() {
+        System.out.println("서비스 센터(1588-oooo) 로 연결합니다.");
+    }
+
     void autoReport() {
         if (canAutoReport) {
             System.out.println("충돌이 감지되어 자동으로 신고합니다.");
-        }
-        else {
+        } else {
             System.out.println("자동 신고 기능이 지원되지 않습니다.");
         }
     }
@@ -43,8 +51,7 @@ public class BlackBox {
     int getVideoFileCount(int type) {
         if (type == 1) { // 일반 영상
             return 9;
-        }
-        else if (type == 2) { // 이벤트 영상
+        } else if (type == 2) { // 이벤트 영상
             return 1;
         }
         return 10;
@@ -66,10 +73,6 @@ public class BlackBox {
 
     void record() {
         record(true, true, 5);
-    }
-
-    static void callServiceCenter() {
-        System.out.println("서비스 센터(1588-oooo) 로 연결합니다.");
     }
 
     void appendModelName(String modelName) {
@@ -103,8 +106,7 @@ public class BlackBox {
     void setPrice(int price) {
         if (price < 100000) {
             this.price = 100000;
-        }
-        else {
+        } else {
             this.price = price;
         }
     }
