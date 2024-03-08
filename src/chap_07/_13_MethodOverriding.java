@@ -16,3 +16,6 @@ public class _13_MethodOverriding {
         speedCam.showMainFeature();
     }
 }
+
+
+//@Override , extends
