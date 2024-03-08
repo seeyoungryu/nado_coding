@@ -1,7 +1,7 @@
 package chap_06;
 
 
-//메소드 오버로딩: 같은 이름의 메소드, 다른 전달값 (전달값의 타입/갯수)
+//*메소드 오버로딩: 같은 이름의 메소드, 다른 전달값 (전달값의 타입/갯수)으로 여러번 선언하는 것
 
 public class _05_Overloading {
     public static int getPower(int number) {
