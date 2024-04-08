@@ -12,6 +12,7 @@ public class _14_Polymorphism {
         // class Student extends Person : 학생 (학생은 사람이다. Student is a person)
         // class Teacher extends Person : 선생님 (선생님은 사람이다. Teacher is a person)
 
+        //Camera 클래스로 다른 형태의 객체를 만들 수 있다
         Camera camera = new Camera();
         Camera factoryCam = new FactoryCam();
         Camera speedCam = new SpeedCam();
@@ -44,6 +45,8 @@ public class _14_Polymorphism {
         if (factoryCam instanceof FactoryCam) {
             ((FactoryCam) factoryCam).detectFire();
         }
+        //FactoryCam *클래스 로 형변환해서 FactoryCam 의 detectFirE() 메소드 사용 가능하게 함
+
 
         if (speedCam instanceof SpeedCam) {
             ((SpeedCam) speedCam).checkSpeed();
@@ -56,3 +59,6 @@ public class _14_Polymorphism {
 //        objs[2] = new SpeedCam();
     }
 }
+
+
+//카메라(부모)-스피드캠(자식) 클래스의 관계에서 -> 카메라(부모클래스) 로 자식클래스 객체 만들기 가능!
